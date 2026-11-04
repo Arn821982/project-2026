@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Магазин одежды</title>
+  </head>
+  <body>
+    <header class="header">
+     <div class="container container--wide">
+       <div class="header__top">
+         <a class="header__logo-link" href="index.html" aria-label="Переход на главную страницу" >
+           <svg class="header__logo" width="83" height="34" aria-hidden="true">
+            <use xlink:href="images/sprite/sprite.svg#header-logo"></use>
+        </svg>
+         </a>
+         <button class="header__burger" type="button" aria-label="Бургерное меню">
+          <svg class="header__burger-icon" width="21" height="10" aria-hidden="true">
+            <use xlink:href="images/sprite/sprite.svg#icon-burger"></use>
+          </svg>
+         </button>
+          <nav class="main-nav">
+           <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Одежда</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Обувь</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Аксессуары</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Бренды</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Расчет стоимости</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Информация</a>
+            </li>
+           </ul>
+          </nav>
+          <div class="header__users">
+            <ul class="header__user-list">
+              <li class="header__user-item">
+                <a class="header__user-link" href="#" aria-label="Поиск">
+                  <svg class="header__user-search" width="17" height="17" aria-hidden="true">
+                   <use xlink:href="images/sprite/sprite.svg#icon-search"></use>
+                 </svg>  
+                </a>
+              </li>
+              <li class="header__user-item">
+                <a class="header__user-link" href="#" aria-label="Перейти в избранное">
+                  <svg  width="18" height="19" aria-hidden="true">
+                   <use xlink:href="images/sprite/sprite.svg#icon-star"></use>
+                 </svg>  
+                </a>
+              </li>
+              <li class="header__user-item">
+                <a class="header__user-link" href="#" aria-label="Перейти в логин">
+                  <svg  width="12" height="17" aria-hidden="true">
+                   <use xlink:href="images/sprite/sprite.svg#icon-user"></use>
+                 </svg>  
+                </a>
+              </li>
+              <li class="header__user-item">
+                <a class="header__user-link" href="#" aria-label="Перейти в логин">
+                  <svg  width="16" height="19" aria-hidden="true">
+                   <use xlink:href="images/sprite/sprite.svg#icon-basket"></use>
+                 </svg> 
+                  <span class="header__user-count" aria-hidden="true">11 899 ₽</span> 
+                  <span class="header__user-count header__user-count--right" aria-hidden="true">7</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+     </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container container--wide">
+          <div class="hero__info">
+            <picture>
+              <source media="(max-width: 767px)" srcset="images/hero-img-mobile-1@1x.png 1x, images/hero-img-mobile-1@2x.png 2x">
+              <source media="(max-width: 1023px)" srcset="images/hero-img-tablet-1@1x.png 1x, images/hero-img-tablet-1@2x.png 2x">
+            <img class="hero__img" src="images/hero-img-dektop.png"  srcset="images/hero-img-dektop-1@1x.png 1x, images/hero-img-dektop-1@2x.png 2x"
+            width="1541" height="631" alt="Мужчина в толстовке">
+            </picture>
+              
+                <div class="hero__inner">
+                  <div class="hero__content">
+                  <h1 class="hero__heading">Широкий ассортимент Одежды</h1>
+                   <p class="hero__text">Одежда от&nbsp;известные брендов у&nbsp;нас в&nbsp;каталоге. Только качественные вещи.</p>
+                    <a  class="hero__btn btn" href="#">Перейти в каталог
+                      <svg  width="6" height="10" aria-hidden="true">
+                        <use xlink:href="images/sprite/sprite.svg#icon-btn"></use>
+                       </svg>    
+                       </a>
+                  </div>
+                     <div class="hero__links">
+                      <a class="hero__link" href="#" aria-label="Перейти назад">
+                       <svg  width="8" height="14" aria-hidden="true">
+                     <use xlink:href="images/sprite/sprite.svg#icon-left"></use>
+                   </svg>  
+                    </a>
+                    <a class="hero__link hero__link--right" href="#" aria-label="Перейти назад">
+                    <svg  width="8" height="14" aria-hidden="true">
+                   <use xlink:href="images/sprite/sprite.svg#icon-right"></use>
+                 </svg> 
+                </a>
+              </div>
+              
+           </div>
+         </div>
+        </div>
+      </section>
+       <section class="shoes">
+        <div class="container container--wide">
+          <div class="shoes__info">
+            <div class="shoes__content">
+              <h2 class="shoes__heading">Обувь</h2>
+              <a class="shoes__link" href="#">больше товаров
+                <svg  class="shoes__icon-link"  width="6" height="10" aria-hidden="true">
+                  <use xlink:href="images/sprite/sprite.svg#icon-shoes-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="shoes__inner">
+              <ul class="shoes__catalog">
+                <li class="shoes__catalog-item">
+                  <div class="shoes__card">
+                    <div class="shoes__card-top">
+                      <svg class="shoes__icon-dark" width="19" height="19" aria-hidden="true">
+                        <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                      </svg>
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="images/nike-mobile-1@1x.png 1x, images/nike-mobile-1@2x.png 2x">
+                        <source media="(max-width: 1023px)" srcset="images/nike-tablet-1@1x.png 1x, images/nike-tablet-1@2x.png 2x">
+                        <img class="shoes__card-img" src="images/nike.png"  srcset="images/nike-desktop-1@1x.png 1x, images/nike-desktop-1@2x.png 2x"
+                        width="318" height="318" alt=" Красовок фирм NIKE">
+                      </picture>
+                       <div class="shoes__card-content">
+                        <p class="shoes__card-title">Nike Court Zoom Cage&nbsp;2</p>
+                         <span class="shoes__card-price">от <span class="shoes__card-price__value">4 699 ₽</span></span>
+                      
+                        </div>
+                    </div>
+                
+                  </div>
+                </li>
+                <li class="shoes__catalog-item">
+                  <div class="shoes__card">
+                    <div class="shoes__card-top">
+                      <svg class="shoes__icon-dark" width="19" height="19" aria-hidden="true">
+                        <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                      </svg>
+                         <picture>
+                          <source media="(max-width: 767px)" srcset="images/force-mobil-1@1x.png 1x, images/force-mobil-1@2x.png 2x">
+                          <source media="(max-width: 1023px)" srcset="images/force-tablet-1@1x.png 1x, images/force-tablet-1@2x.png 2x">
+                           <img class="shoes__card-img" src="images/force.png" srcset="images/force-deaktop-1@1x.png 1x, images/force-deaktop-1@2x.png 2x"
+                           width="318" height="318" alt=" Красовок фирм force">
+                        </picture>
+                        <div class="shoes__card-content">
+                          <p class="shoes__card-title">Air Force&nbsp;1 Ultra</p>
+                          <span class="shoes__card-price">от <span class="shoes__card-price__value">6 789 ₽</span></span>
+                          
+                        </div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="shoes__catalog-item">
+                  <div class="shoes__card">
+                    <div class="shoes__card-top">
+                      <svg class="shoes__icon-dark" width="19" height="19" aria-hidden="true">
+                        <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                      </svg>
+                         <picture>
+                          <source media="(max-width: 767px)" srcset="images/force-1-Ultra-mobile-1@1x.png 1x, images/force-1-Ultra-mobile-1@2x.png 2x">
+                          <source media="(max-width: 1023px)" srcset="images/force-1-Ultra-tablet-1@1x.png 1x, images/force-1-Ultra-tablet-1@2x.png 2x">
+                          <img class="shoes__card-img" src="images/force-1-Ultra.png" srcset="images/force-1-Ultra-desktop-1@1x.png 1x, images/force-1-Ultra-desktop-1@2x.png 2x"
+                           width="318" height="318" alt=" Красовок фирм force-1">
+                        </picture>
+                        <div class="shoes__card-content">
+                          <p class="shoes__card-title">Air Force&nbsp;1 Ultra Flyknit</p>
+                          <span class="shoes__card-price">от <span class="shoes__card-price__value">3 129 ₽</span></span>
+                         
+                        </div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <li class="shoes__catalog-item">
+                  <div class="shoes__card">
+                    <div class="shoes__card-top">
+                      <svg class="shoes__icon-dark" width="19" height="19" aria-hidden="true">
+                        <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                      </svg>
+                         <picture>
+                          <source media="(max-width: 767px)" srcset="images/soccer-shoes-mobile-1@1x.png 1x, images/soccer-shoes-mobile-1@2x.png 2x">
+                          <source media="(max-width: 1023px)" srcset="images/soccer-shoes-tablet-1@1x.png 1x, images/soccer-shoes-tablet-1@2x.png 2x">
+                          <img class="shoes__card-img" src="images/soccer-shoes.png" srcset="images/soccer-shoes-desktop-1@1x.png 1x, images/soccer-shoes-desktop-1@2x.png 2x"
+                           width="318" height="318" alt=" Красовок фирмы Men’s Soccer Shoes">
+                        </picture>
+                           <div class="shoes__card-content">
+                            <p class="shoes__card-title">Men&rsquo;s Soccer Shoes</p>
+                             <span class="shoes__card-price">от <span class="shoes__card-price__value">2 699 ₽</span></span>
+                          </div>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </section>
+       <section class="clothing">
+        <div class="container container--wide">
+          <div class="clothing__content">
+            <h2 class="clothing__heading">Одежда</h2>
+            <a class="clothing__link" href="#">больше товаров
+              <svg class="clothing__icon-link" width="6" height="10" aria-hidden="true">
+                <use xlink:href="images/sprite/sprite.svg#icon-shoes-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="clothing__info">
+            <ul class="clothing__card">
+              <li class="clothing__card-item">
+                <div class="clothing__card-info">
+                  <svg class="clothing__icon-dark" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                  </svg>
+                  <div class="clothing__card-inner">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/shirt-mobile-1@1x.png 1x, images/shirt-mobile-1@2x.png 2x">
+                    <source media="(max-width: 1023px)" srcset="images/shirt-tablet-1@1x.png 1x, images/shirt-tablet-1@2x.png 2x">
+                    <img class="clothing__card-img" src="images/shirt.png" srcset="images/shirt-desktop-1@1x.png 1x, images/shirt-desktop-1@2x.png 2x" 
+                    width="318" height="318" alt="Рубашка">
+                  </picture>
+                     <div class="clothing__card-content">
+                      <p class="clothing__card-title">Nike Court Zoom Cage&nbsp;2</p>
+                      <span class="clothing__card-price">от <span class="clothing__card-price__value">4 699 ₽</span></span>
+                     </div>
+                  </div>
+                </div>
+              </li>
+              <li class="clothing__card-item">
+                <div class="clothing__card-info">
+                  <svg class="clothing__icon-dark" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                  </svg>
+                  <div class="clothing__card-inner">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="images/hody-mobile-1@1x.png 1x, images/hody-mobile-1@2x.png 2x">
+                      <source media="(max-width: 1023px)" srcset="images/hody-tablet-1@1x.png 1x, images/hody-tablet-1@2x.png 2x">
+                      <img class="clothing__card-img" src="images/hody.png" srcset="images/hody-desktop-1@1x.png 1x, images/hody-desktop-1@2x.png 2x"
+                       width="318" height="318" alt="Худи">
+                    </picture>
+                    <div class="clothing__card-content">
+                      <p class="clothing__card-title">Air Force&nbsp;1 Ultra Flyknit</p>
+                      <span class="clothing__card-price">от <span class="clothing__card-price__value">3 129 ₽</span></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="clothing__card-item">
+                <div class="clothing__card-info">
+                  <svg class="clothing__icon-dark" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                  </svg>
+                  <div class="clothing__card-inner">
+                    <img class="clothing__card-img" src="images/checkered-shirt.png" srcset="images/checkered-shirt-desktop-1@1x.png 1x, images/checkered-shirt-desktop-1@2x.png 2x"
+                    width="318" height="318" alt="Рубашка клетчетая">
+                    <div class="clothing__card-content">
+                      <p class="clothing__card-title">Air Force&nbsp;1 Ultra</p>
+                      <span class="clothing__card-price">от <span class="clothing__card-price__value">6 789 ₽</span></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="clothing__card-item">
+                <div class="clothing__card-info">
+                  <svg class="clothing__icon-dark" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                  </svg>
+                  <div class="clothing__card-inner">
+                    <img class="clothing__card-img" src="images/blue-hoodie.png" srcset="images/blue-hoodie-desktop-1@1x.png 1x, images/blue-hoodie-desktop-1@2x.png 2x"
+                    width="318" height="318" alt="Худи голубая">
+                    <div class="clothing__card-content">
+                      <p class="clothing__card-title">Men&rsquo;s Soccer Shoes</p>
+                      <span class="clothing__card-price">от <span class="clothing__card-price__value">2 699 ₽</span></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> 
+       </section>
+       <section class="accessories">
+        <div class="container container--wide">
+          <div class="accessories__content">
+            <h2 class="accessories__heading">Аксессуары</h2>
+            <a class="accessories__link" href="#">больше товаров
+              <svg class="accessories__icon-link" width="6" height="10" aria-hidden="true">
+                <use xlink:href="images/sprite/sprite.svg#icon-shoes-right"></use>
+              </svg>
+            </a>
+          </div>
+           <div class="accessories__info">
+             <ul class="accessories__card">
+              <li class="accessories__card-item">
+                <div class="accessories__card-info">
+                  <svg class="accessories__icon-dark" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                  </svg>
+                  <div class="accessories__card-inner">
+                    <picture> 
+                      <source media="(max-width: 767px)" srcset="images/baseball-cap-mobile-1@1x.png 1x, images/baseball-cap-mobile-1@2x.png 2x">
+                      <source media="(max-width: 1023px)" srcset="images/baseball-cap-tablet-1@1x.png 1x, images/baseball-cap-tablet-1@2x.png 2x">
+                     <img class="accessories__card-img" src="images/baseball-cap.png" srcset="images/baseball-cap-desktop-1@1x.png 1x, images/baseball-cap-desktop-1@2x.png 2x"
+                     width="318" height="318" alt="Бейсболка">
+                    </picture>
+                   <div class="accessories__card-content">
+                       <p class="accessories__card-title">Nike Court Zoom Cage&nbsp;2</p>
+                      <span class="accessories__card-price">от <span class="accessories__card-price__value">2 699 ₽</span></span>
+                   </div> 
+                  </div>
+                </div>
+              </li>
+              <li class="accessories__card-item">
+                <div class="accessories__card-info">
+                  <svg class="accessories__icon-dark" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                  </svg>
+                  <div class="accessories__card-inner">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="images/belt-bag-mobile-1@1x.png 1x, images/belt-bag-mobile-1@2x.png 2x">
+                      <source media="(max-width: 1023px)" srcset="images/belt-bag-tablet-1@1x.png 1x, images/belt-bag-tablet-1@2x.png 2x">
+                    <img class="accessories__card-img" src="images/belt-bag.png" srcset="images/belt-bag-dektop-1@1x.png 1x, images/belt-bag-dektop-1@2x.png 2x"
+                    width="318" height="318" alt="Сумка на поясе">
+                    </picture>
+                    <div class="accessories__card-content">
+                      <p class="accessories__card-title">Men&rsquo;s Soccer Shoes</p>
+                      <span class="accessories__card-price">от <span class="accessories__card-price__value">2 699 ₽</span></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accessories__card-item">
+                <div class="accessories__card-info">
+                  <svg class="accessories__icon-dark" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                  </svg>
+                  <div class="accessories__card-inner">
+                    <img class="accessories__card-img" src="images/winter-hat.png" srcset="images/winter-hat-desltop-1@1x.png 1x, images/winter-hat-desltop-1@2x.png 2x" 
+                    width="318" height="318" alt="Шапка">
+                    <div class="accessories__card-content">
+                      <p class="accessories__card-title">Air Force&nbsp;1 Ultra</p>
+                      <span class="accessories__card-price">от <span class="accessories__card-price__value">6 789 ₽</span></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accessories__card-item">
+                <div class="accessories__card-info">
+                  <svg class="accessories__icon-dark" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dark"></use>
+                  </svg>
+                  <div class="accessories__card-inner">
+                    <img class="accessories__card-img" src="images/bag.png" srcset="images/bag-desktop-1@1x.png 1x, images/bag-desktop-1@2x.png 2x"
+                    width="318" height="318" alt="Сумка на плечо">
+                    <div class="accessories__card-content">
+                      <p class="accessories__card-title">Men&rsquo;s Soccer Shoes</p>
+                      <span class="accessories__card-price">от <span class="accessories__card-price__value">2 699 ₽</span></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+             </ul>
+           </div>
+        </div>
+       </section>
+       <section class="calculate">
+        <div class="container container--wide">
+          <div class="calculate__info">
+            <div class="calculate__content">
+             <h2 class="calculate__heading">Рассчитать стоимость</h2>
+             <p class="calculate__text">Если вам не&nbsp;удалось найти&nbsp;то, что искали, вы&nbsp;всегда можете воспользоваться автоматическим расчетом
+            стоимость заказа на&nbsp;маркетплейсе <span class="calculate__text-big">Poizon</span>, включая комиссию сервиса и&nbsp;доставку.</p>
+            </div>
+            <ul class="calculate__list">
+              <li class="calculate__list-item">
+              Подробная, пошаговая статья о&nbsp;том, как установить приложение Poizon
+              </li>
+              <li class="calculate__list-item">
+                Напишите нам в&nbsp;Telegram или WhatsApp какую вещь хотите купить
+              </li>
+            </ul>
+            <a href="#" class="calculate__btn btn">Рассчитать стоимость
+              <svg width="6" height="10" aria-hidden="true">
+                <use xlink:href="images/sprite/sprite.svg#icon-btn"></use>
+              </svg>
+            </a>
+             <picture>
+              <source media="(max-width: 1023px)" srcset="images/iphone-tablet-1@1x.png 1x, images/iphone-tablet-1@2x.png 2x">
+              <img class="calculate__img" src="images/iphone.png" srcset="images/iphone-desktop-1@1x.png 1x, images/iphone-desktop-1@2x.png 2x"
+               width="257" height="636" alt="Iphone">
+            </picture>
+          </div>
+        </div>
+       </section>
+       <section class="about">
+        <div class="container">
+          <div class="about__company-info">
+           <div class="about__company-content">
+             <h2 class="about__company-heading">О&nbsp;интернет-магазине xwear</h2>
+             <p class="about__company-text">Команда XWEAR предоставляет услугу доставки только оригинальных товаров c&nbsp;крупнейшего китайского маркетплейса
+            Poizon, чтобы наши клиенты экономили более&nbsp;40% на&nbsp;каждой покупке.</p>
+
+          <p class="about__company-text"> Работаем без посредников, благодаря чему можем предоставлять лучшую цену. Быстрая, бесплатная доставка.</p>
+            <p class="about__company-text">Сайт, на&nbsp;котором можно будет удобно оформить покупку, не&nbsp;скачивая китайское мобильное приложение Poizon,
+            с&nbsp;удобной фильтрацией огромного количества товаров, а&nbsp;так&nbsp;же с&nbsp;возможностью сразу увидеть
+            окончательную цену товара.</p>
+           </div>
+           <div class="about__company-intro">
+            <ul class="about__company-list">
+              <li class="about__company-list__item">
+                <div class="about__company-inner">
+                  <svg class="about__company-icon" width="51" height="51" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-dellivery"></use>
+                  </svg>
+                 <div class="about__company-list__content">
+                <span class="about__company-list-text">Бесплатная доставка до&nbsp;России</span>
+                <span class="about__company-list-value">Доставим вам заказ абсолютно бесплатно до&nbsp;России</span>
+                </div>
+                </div>
+              </li>
+              <li class="about__company-list__item">
+              <div class="about__company-inner">
+                <svg class="about__company-icon"  width="51" height="51" aria-hidden="true">
+                <use xlink:href="images/sprite/sprite.svg#icon-client"></use>
+                </svg>
+              <div class="about__company-list__content">
+               <span class="about__company-list-text">мы&nbsp;Работаем без посредников</span>
+               <span class="about__company-list-value">Между нами и&nbsp;клиентом нет третьего лишнего</span>
+               </div>
+               </div>
+              </li>
+              <li class="about__company-list__item">
+              <div class="about__company-inner">
+                <svg  class="about__company-icon" width="51" height="51" aria-hidden="true">
+                  <use xlink:href="images/sprite/sprite.svg#icon-order"></use>
+                </svg>
+              <div class="about__company-list__content">
+              <span class="about__company-list-text">простота в&nbsp;заказе и&nbsp;использовании</span>
+              <span class="about__company-list-value">Для заказа с&nbsp;Poizon не&nbsp;нужно никаких приложений</span>
+                </div>
+                </div>
+              </li>
+            </ul>
+            </div>
+            <div class="about__company-block">
+              <svg class="about__company-icon"  width="36" height="36" aria-hidden="true">
+                <use xlink:href="images/sprite/sprite.svg#icon-sms"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+       </section>
+       <section class="blog">
+        <div class="container container--wide">
+         <div class="blog__info">
+          <div class="blog__info-content">
+            <h2 class="blog__info-heading">Наш блог</h2>
+            <a class="blog__link" href="#">больше статей
+              <svg width="6" height="10" aria-hidden="true">
+                <use xlink:href="images/sprite/sprite.svg#icon-shoes-right"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="blog__list">
+            <li class="blog__list-item">
+              <div class="blog__intro">
+                 <picture>
+                  <source media="(max-width: 767px)" srcset="images/cerl-mobile-1@1x.png 1x, images/cerl-mobile-1@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="images/cerl-tablet-1@1x.png 1x, images/cerl-tablet-1@2x.png 2x">
+                  <img  class="blog__img" src="images/cerl-dektop.png" srcset="images/cerl-dektop-1@1x.png 1x, images/cerl-dektop-1@2x.png 2x"
+                   width="433" height="250" alt="Девушка в блузке">
+                  </picture>
+                  <div class="blog__inner-content">
+                    <h2 class="blog__inner-heading">Делаем скидки на&nbsp;всю женскую одежду осеннего сезона</h2>
+                      <p class="blog__inner-text">Мы&nbsp;запускаем акцию. Готовься к&nbsp;осени с&nbsp;лета. На&nbsp;протяжении всего лета покупайте женские осенние вещи
+                         со&nbsp;скидками.</p>
+                         <div class="blog__inner-links">  
+                            <a class="blog__inner-link" href="#">Узнать подробнее</a>
+                             <a class="blog__inner-link blog__inner-link--right" href="#">16 июня 2023</a>
+                        </div>
+                     </div>
+                   </div>
+                 </li>
+                <li class="blog__list-item">
+                  <div class="blog__intro">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="images/girls-in-jeans-tablet-1@1x.png 1x, images/girls-in-jeans-tablet-1@2x.png 2x">
+                    <img class="blog__img" src="images/girls-in-jeans.png" srcset="images/girls-in-jeans-dektop-1@1x.png 1x, images/girls-in-jeans-dektop-1@2x.png 2x"
+                    width="433" height="250" alt="Девушки в джинсах">
+                    </picture>
+                    <div class="blog__inner-content">
+                      <h2 class="blog__inner-heading">Джинсы для всех друзей. Скидки на&nbsp;большие покупки</h2>
+                      <p class="blog__inner-text">Мы&nbsp;запускаем акцию. Готовься к&nbsp;осени с&nbsp;лета. На&nbsp;протяжении всего лета покупайте женские осенние вещи
+                      со&nbsp;скидками.</p>
+                      <div class="blog__inner-links">
+                        <a class="blog__inner-link" href="#">Узнать подробнее</a>
+                        <a class="blog__inner-link blog__inner-link--right" href="#">16 июня 2023</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="blog__list-item">
+                  <div class="blog__intro">
+                    <svg class="blog__intro-icon" width="199" height="81" aria-hidden="true">
+                      <use xlink:href="images/sprite/sprite.svg#icon-logo-img"></use>
+                    </svg>
+                    <img class="blog__img" src="images/girl-hat.png" width="433" height="250" alt="Девушка в блузке">
+                    <div class="blog__inner-content">
+                      <h2 class="blog__inner-heading">Джинсы для всех друзей. Скидки на&nbsp;большие покупки</h2>
+                      <p class="blog__inner-text">Мы&nbsp;запускаем акцию. Готовься к&nbsp;осени с&nbsp;лета. На&nbsp;протяжении всего
+                        лета покупайте женские осенние вещи
+                        со&nbsp;скидками.</p>
+                      <div class="blog__inner-links">
+                        <a class="blog__inner-link" href="#">Узнать подробнее</a>
+                        <a class="blog__inner-link blog__inner-link--right" href="#">16 июня 2023</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+           </div>
+        </div> 
+       </section>
+    </main>
+  <footer class="footer">
+    <div class="container container--wide">
+      <div class="footer__top">
+        <ul class="footer__catalog-list">
+          <li class="footer__catalog-list__item">
+        <a class="footer__catalog-link" href="#">Каталог </a>
+            <ul class="footer__catalog-bootom">
+          <li class="footer__catalog-bootom__item">
+            <a class="footer__bootom-link" href="#">Одежда</a>
+          </li>
+          <li class="footer__catalog-bootom__item">
+            <a class="footer__bootom-link" href="#">Обувь</a>
+          </li>
+          <li class="footer__catalog-bootom__item">
+            <a class="footer__bootom-link" href="#">Аксессуары</a>
+          </li>
+          <li class="footer__catalog-bootom__item">
+            <a class="footer__bootom-link" href="#">Расчет стоимости</a>
+          </li>
+            </ul>
+              </li>
+            <li class="footer__catalog-list__item">
+              <a class="footer__catalog-link" href="#">Информация </a>
+            <ul class="footer__catalog-bootom">
+              <li class="footer__catalog-bootom__item">
+                <a class="footer__bootom-link" href="#">Блог</a>
+              </li>
+              <li class="footer__catalog-bootom__item">
+                <a class="footer__bootom-link" href="#">Контакты</a>
+              </li>
+              <li class="footer__catalog-bootom__item">
+                <a class="footer__bootom-link" href="#">Доставка</a>
+              </li>
+                <li class="footer__catalog-bootom__item">
+                  <a class="footer__bootom-link" href="#">Оплата</a>
+                </li>
+                <li class="footer__catalog-bootom__item">
+                  <a class="footer__bootom-link" href="#">Оплата</a>
+                </li>
+                <li class="footer__catalog-bootom__item">
+                <a class="footer__bootom-link" href="#">FAQ</a>
+                </li>
+            </ul>
+            </li>
+        </ul> 
+        <div class="footer__contacts">
+           <div class="footer__mail">
+            <span class="footer__mail-text">Контакты</span>
+            <a class="footer__mail-link" href="mailto:info@xwear.info">info@xwear.info</a>
+           </div>
+           <div class="footer__phone">
+            <a class="footer__phone-link" href="tel:+79936083885">+7 993 608 38 85</a>
+           </div>
+            <a class="footer__link" href="#">Мессенджеры</a>
+            <ul class="footer__social social">
+              <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Перейти в tg">
+                  <svg width="18" height="15" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#icon-tg"></use>
+                  </svg>
+                  </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--right" href="#" aria-label="Перейти в watsapp">
+                <svg width="17" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite/sprite.svg#icon-watsapp"></use>
+                </svg>
+                </a>
+              </li>
+            </ul>
+              <a class="footer__link footer__link--sample" href="#">Наши соц.сети</a>
+              <ul class="footer__social social social--vk">
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Перейти в vk">
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right-content">
+          <h2 class="footer__news-text">Подписка на&nbsp;новости</h2>
+          <span class="footer__news-discount">Будьте в&nbsp;курсе скидок и&nbsp;новостей</span>
+          </div>
+           <fieldset class="order-form">
+            <div class="custom-input">
+              <input class="custom-input__field" type="email" name="user-mail" id="user-mail" placeholder="Ваш email">
+              <label class="custom-input__label" for="user-mail"></label>
+               <span class="custom-input__text">Подписываясь на&nbsp;рассылку вы&nbsp;соглашатесь с&nbsp;обработкой персональных данных</span>
+            <button class="custom-input__btn"  type="submit">
+            <svg width="8" height="10" aria-hidden="true">
+              <use xlink:href="images/sprite/sprite.svg#icon-form-btn"></use>
+            </svg>
+            </button>
+            </div>
+           </fieldset>
+          
+          </div>
+        </div>
+        <div class="footer__bootom">
+        <a class="footer__logo" href="#" aria-label="Перейти на главную страницу">
+          <svg width="99" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+        <div class="footer__content">
+         <p class="footer__policy">Политика конфиденциальности</p>
+         <span class="footer__agreement">Пользовательское соглашение</span>
+        </div>
+        </div>
+        </div>
+    
+  </footer>
+  </body>
+</html>

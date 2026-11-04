@@ -1,0 +1,152 @@
+.shoes {
+    margin: 0;
+    padding: 0;
+
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    justify-content: space-between;
+    display: flex;
+    margin: 0 0 38px;
+
+    @include vp-1023 {
+      margin: 0 0 35px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__heading {
+    font-weight: 900;
+    font-size: 31px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin: 0 0 0;
+
+    @include vp-1023 {
+      font-size: 25px;
+    }
+
+    @include vp-767 {
+      font-size: 19px;  
+    }
+  }
+
+   &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000000;
+    position: relative;
+    text-transform: uppercase;
+
+    @include vp-767 {
+        font-size: 12px;
+    }
+  }
+
+   &__link::after {
+    position: absolute;
+    content: "";
+    width: 162px;
+    height: 28px;
+    border-bottom: 2px solid #121214;
+
+    @include vp-767 {
+        width: 140px;
+    }
+}
+
+ &__icon-link {
+    padding: 0;
+    display: flex;
+    padding: 0;
+    align-items: center;
+ }
+
+ &__catalog {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    gap: 30px;
+
+  @include vp-1023 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include vp-767 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ }
+
+  &__card {
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+ }
+
+  &__card-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-title {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+  
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 18px;
+  }  
+}
+
+  &__card-price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3C3C3C;
+    margin: 0;
+
+}
+
+  &__card-price__value {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3C3C3C;
+    margin: 0;
+
+   @include vp-1023 {
+    font-size: 14px;
+   } 
+}
+
+  &__icon-dark {
+    position: absolute;
+    top: 33px;
+     right: 25px;
+     transform: translate(-50%);
+   }
+
+}

@@ -1,0 +1,212 @@
+.footer {
+    margin: 0;
+    padding: 45px 0 51px;
+    background: #121214;
+
+   @include vp-1023 {
+    padding: 38px 0;
+   }
+   
+   @include vp-767 {
+    padding: 28px 0;
+   }
+
+
+   &__top {
+    display: flex;
+    gap: 212px;
+  
+   @include vp-1023 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+    margin: 0 0 27px;
+   }
+   
+   @include vp-767 {
+    grid-template-columns: 1fr;
+   }
+   }
+
+  &__catalog-link {
+    display: flex;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 28px;
+    text-transform: uppercase;
+ }
+
+  &__catalog-list {
+    display: flex;
+    list-style: none;
+    gap: 212px;
+    margin: 0;
+    padding: 0;
+
+    @include vp-1023 {
+        gap: 112px;
+    }
+
+   @include vp-767 {
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+   } 
+  }
+
+  &__catalog-bootom {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 9px;
+
+    @include vp-767 {
+      display: none;
+    }
+}
+
+&__bootom-link {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  line-height: 28px;
+  color: #DCDCE0;
+}
+
+&__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    @include vp-1023 {
+     min-width: 143px;
+    align-items: center;
+    }
+}
+
+&__mail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 9px;
+}
+
+&__mail-text {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+&__social {
+ margin: 0 0 0 0;
+}
+
+&__mail-link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-decoration: underline;
+    color: #DCDCE0;
+    margin: 0;
+}
+
+&__phone-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+  &__link {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+  }
+
+  &__right {
+    @include vp-1023 {
+     display: flex;
+    }
+   @include vp-767 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   }
+  }
+
+  &__right-content {
+    @include vp-1023 {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    }
+
+   @include vp-767 {
+     display: flex;
+     flex-direction: column;
+    }
+  }
+  &__news-text {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 9px;
+  }
+
+  &__news-discount {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #DCDCE0;
+    margin: 0 0 9px;
+  }
+
+  &__bootom {
+    display: flex;
+    justify-content: space-between;
+    gap: 750px;
+
+    @include vp-1023 {
+      gap: 50px;  
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto ;
+  }
+
+  &__policy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: #707076;
+    text-align: right;
+    margin: 0 0 0 auto;
+   }
+
+   &__agreement {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: #707076;
+    text-align: right;
+    margin: 0 auto 0 auto;
+    }
+
+}

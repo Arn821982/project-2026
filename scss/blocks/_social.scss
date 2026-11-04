@@ -1,0 +1,21 @@
+.social {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.social__link {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #22A6E6;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__link--right {
+    background: #55CD62;
+}

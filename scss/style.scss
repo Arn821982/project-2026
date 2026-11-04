@@ -1,0 +1,27 @@
+/*Global*/
+@import "global/_variables.scss";
+@import "global/_mixins.scss";
+@import "global/_normalize.scss";
+@import "global/_fonts.scss";
+@import "global/_reboot.scss";
+@import "global/_container.scss";
+
+
+
+
+/*Blocks*/
+
+@import "blocks/_header.scss";
+@import "blocks/_main-nav.scss";
+@import "blocks/_hero.scss";
+@import "blocks/_btn.scss";
+@import "blocks/_shoes.scss";
+@import "blocks/_clothing.scss";
+@import "blocks/_accessories.scss";
+@import "blocks/_calculate.scss";
+@import "blocks/_social.scss";
+@import "blocks/_about.scss";
+@import "blocks/_blog.scss";
+@import "blocks/_order-form.scss";
+@import "blocks/_custom-input.scss";
+@import "blocks/_footer.scss";

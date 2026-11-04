@@ -1,0 +1,141 @@
+.hero {
+  margin: 0 0 80px;
+  padding: 0;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include vp-1023 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0 63px;
+    max-width: 571px;
+
+    @include vp-1023 {
+      margin: 0;
+      padding: 0 0 19px;
+    }
+    @include vp-767 {
+      padding: 43px 0 13px 0;
+    }
+  }
+
+  &__inner {
+    max-width: 571px;
+    display: flex;
+    flex-direction: column;
+    padding: 98px 90px 40px;
+    z-index: 1;
+
+    @include vp-1023 {
+      margin: 0 0 19px;
+    }
+
+     @include vp-767 {
+       padding: 45px 17px;
+     }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    bottom: 0;
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  @include vp-1023 {
+    width: 728px;
+    height: 451px;
+    }
+
+   @include vp-767 {
+      width: 340px;
+      height: 339px;
+   } 
+  }
+
+  &__heading {
+    max-width: 570px;
+    font-weight: 900;
+    font-size: 51px;
+    line-height: 63px;
+    text-transform: uppercase;
+    margin: 0 0 19px 0;
+
+  @include vp-1023 {
+      max-width: 571px;
+      font-size: 34px;
+      line-height: 43px;
+    }
+
+   @include vp-767 {
+    max-width: 296px;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 7px;
+   } 
+  }
+
+  &__text {
+    max-width: 535px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    margin: 0 0 19px;
+
+  @include vp-1023 {
+    max-width: 367px;
+    font-size: 17px;
+    line-height: 27px;
+    }
+
+  @include vp-767 {
+    max-width: 208px;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 0 0 19px;
+    }
+  }
+
+  &__btn {
+    width: 251px;
+
+    @include vp-767 {
+      width: 204px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 15px;
+    margin: 0 90px 0 0;
+    z-index: 1;
+  }
+
+  &__link {
+    width: 67px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $color-white;
+
+  @include vp-1023 {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}
